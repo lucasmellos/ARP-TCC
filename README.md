@@ -43,21 +43,28 @@ A estação Arduino necessita do upload do código. Abrindo o serial monitor do 
 ```
   
 -  Para realizar a troca de endereço IP. (Após a execução do comando reiniciar o Arduino)
-  ```
+```
   ip=192.168.2.1#
-  ```
+```
   
 - Mudança de MAC Address:
 ```
-mac=<xx-xx-xx-xx-xx-xx>#
+  mac=<xx-xx-xx-xx-xx-xx>#
 ```
 
 - Verficar as informações de rede do Arduino e se as modificações surtiram efeito:
- 
 ```
   ipconfig#
 ```
 
+- Execução de testes:
+A execução dos teste é definida somente para a aplicação Java para Windows, Mac OS X e Linux pelo fato de tornar o sistema mais privativo e dando uma melhor usabilidade aos usuários das aplicações móveis.
+```
+  final char CHR0 = 0;
+  String finalprotocolo = "" + CHR0 + "";
+  
+  String testando = "/ARP/test" + finalprotocolo;
+```
 Configurando a parte cliente
 -------------------------------------
 
@@ -66,18 +73,18 @@ Qualquer uma das estações do lado do cliente terá o IP gravado em um arquivo 
 - Mensagens para serem enviadas:
 
 Comando Record (Gravação de comandos IR):
-Após o LED ficar piscando posicionar o controle remoto no recepetor IR para que consiga realizar a leitura da frequência, após apertar o botão que deseja que seje o correspondente do comando.
+Após o LED ficar piscando posicionar o controle remoto no recepetor IR para que consiga realizar a leitura da frequência, após apertar o botão que deseja que seje o correspondente do comando. Função esta que assim como a função de teste se faz presente somente na aplicação Java para Windows, Mac OS X e Linux pelos mesmos motivos.
 ```
   final char CHR0 = 0;
   String finalprotocolo = "" + CHR0 + "";
   
-  /ARP/IR/record
+  String record = "/ARP/IR/record" + finalprotocolo;
 ```
 
 - Acionamento de rêles:
 Os relês são identifcados por `0` e `1`. Sendo assim a mensagem é composta por:
 ```
-“/ARP/relay/<MAC_Xbee>/<número_relê>/<estado>”
+  “/ARP/relay/<MAC_Xbee>/<número_relê>/<estado>”
 ```
 - Envio de comandos IR:
 As mensagens dos comandos IR  são compostas conforme o exemplo.
