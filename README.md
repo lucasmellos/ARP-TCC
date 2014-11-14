@@ -11,7 +11,7 @@ O projeto é composto de uma arquitetura cliente/servidor na qual tem-se:
 
 Utilizando o hardware necessário para o equipamento. O código para a projeto encontra-se na pasta `Arduino Versão Adaptada/Automação Modular`.
 
-As bibliotecas necessárias para o funcionamento do Arduino estão pasta `libraries` que compõe este repositório.
+As bibliotecas necessárias para o funcionamento do Arduino estão pasta `libraries` que compõe este repositório e devem ser coladas dentro da pasta `libraries` do Arduino IDE.
 
 - Client-Side:
 
@@ -22,9 +22,9 @@ Instalação parte client-side
 
 Para a aplicação desenvolvida em Java para Windows, Mac OS X e Linux basta apenas importar a pasta `ARP` para o **[NetBeans IDE](https://netbeans.org/)**.
 
-Para a app desenvolvida para iOS - iPhone é necessário somente realizar o download da pasta `TCC` e executar o projeto para Xcode.
+Para a app desenvolvida para iOS - iPhone é necessário somente realizar o download da pasta `TCC` e executar o projeto para **[Xcode](https://developer.apple.com/xcode/downloads/)**.
 
-Na aplicação Android ............
+Na aplicação Android é só realizar a importação da pasta ..... para dentro do **[Android SDK](http://developer.android.com/sdk/index.html)**.
 
 Configurando a parte servidora
 ------------------------------------
@@ -65,6 +65,7 @@ A execução dos teste é definida somente para a aplicação Java para Windows,
   
   String testando = "/ARP/test" + finalprotocolo;
 ```
+
 Configurando a parte cliente
 -------------------------------------
 
@@ -101,7 +102,9 @@ Este projeto tem um cunho de software livre, por isso qualquer contribuição se
 São pontos a serem implementados ainda na concepção do autores:
 - Implementar o final de protocolo para a plataforma iOS;
 - Implementar um app para Windows Phone;
-- Utilizar sensores de umidade e temperatura.
+- Utilizar sensores de umidade e temperatura;
+- Implementar no uso do Framework Core Foundation Framework;
+- Realziar a mesma implementação com WebSockets.
 
 Contato
 -------------
