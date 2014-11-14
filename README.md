@@ -13,6 +13,56 @@ Utilizando o hardware necessário para o equipamento. O código para a projeto e
 
 As bibliotecas necessárias para o funcionamento do Arduino estão pasta `libraries` que compõe este repositório.
 
+- Client-Side:
+
+Para o funcionamento da comunicação via protocolo UDP na porta 4444 é necessário uma estação cliente, na qual tem-se disponível até então para as plataformas: Windows, Mac OS X, Linux, iOS e Android.
+
+Instalação parte client-side
+-------------------------------
+
+Para a aplicação desenvolvida em Java para Windows, Mac OS X e Linux basta apenas importar a pasta `ARP` para o **[NetBeans IDE](https://netbeans.org/)**.
+
+Para a app desenvolvida para iOS - iPhone é necessário somente realizar o download da pasta `TCC` e executar o projeto para Xcode.
+
+Na aplicação Android ............
+
+Configurando as estações (Servidor)
+------------------------------------
+
+A estação Arduino necessita do upload do código. Abrindo o serial monitor do Arduino IDE os comandos:
+- Comando de configuração XBee do servidor:
+
+```
+  auto_config#
+```
+
+- Configuração do XBee escravo:
+
+```
+  ip=192.168.2.1#
+  ```
+  
+-  Para realizar a troca de endereço IP. (Após a execução do comando reiniciar o Arduino)
+  ```
+  ip=192.168.2.1#
+  ```
+
+Configurando as estações (Cliente)
+-------------------------------------
+
+Qualquer uma das estações do lado do cliente terá o IP gravado em um arquivo com extensão `.txt`.
+
+- Mensagens para serem enviadas:
+
+Comando Record (Gravação de comandos IR):
+Após o LED ficar piscando posicionar o controle remoto no recepetor IR para que consiga realizar a leitura da frequência, após apertar o botão que deseja que seje o correspondente do comando.
+```
+  /ARP/IR/record
+```
+
+Acionamento de rêles:
+Para cada re........................
+
 Contribuindo
 ------------
 Este projeto tem um cunho de software livre, por isso qualquer contribuição será bem vinda.
