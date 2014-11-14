@@ -26,7 +26,7 @@ Para a app desenvolvida para iOS - iPhone é necessário somente realizar o down
 
 Na aplicação Android ............
 
-Configurando as estações (Servidor)
+Configurando a parte servidora
 ------------------------------------
 
 A estação Arduino necessita do upload do código. Abrindo o serial monitor do Arduino IDE os comandos:
@@ -39,15 +39,26 @@ A estação Arduino necessita do upload do código. Abrindo o serial monitor do 
 - Configuração do XBee escravo:
 
 ```
-  ip=192.168.2.1#
-  ```
+  config_slave:RCA_RELAY_1_0#
+```
   
 -  Para realizar a troca de endereço IP. (Após a execução do comando reiniciar o Arduino)
   ```
   ip=192.168.2.1#
   ```
+  
+- Mudança de MAC Address:
+```
+mac=<xx-xx-xx-xx-xx-xx>#
+```
 
-Configurando as estações (Cliente)
+- Verficar as informações de rede do Arduino e se as modificações surtiram efeito:
+ 
+```
+  ipconfig#
+```
+
+Configurando a parte cliente
 -------------------------------------
 
 Qualquer uma das estações do lado do cliente terá o IP gravado em um arquivo com extensão `.txt`.
@@ -57,11 +68,25 @@ Qualquer uma das estações do lado do cliente terá o IP gravado em um arquivo 
 Comando Record (Gravação de comandos IR):
 Após o LED ficar piscando posicionar o controle remoto no recepetor IR para que consiga realizar a leitura da frequência, após apertar o botão que deseja que seje o correspondente do comando.
 ```
+  final char CHR0 = 0;
+  String finalprotocolo = "" + CHR0 + "";
+  
   /ARP/IR/record
 ```
 
-Acionamento de rêles:
-Para cada re........................
+- Acionamento de rêles:
+Os relês são identifcados por `0` e `1`. Sendo assim a mensagem é composta por:
+```
+“/ARP/relay/<MAC_Xbee>/<número_relê>/<estado>”
+```
+- Envio de comandos IR:
+As mensagens dos comandos IR  são compostas conforme o exemplo.
+```
+  final char CHR0 = 0;
+  String finalprotocolo = "" + CHR0 + "";
+  
+  String ligartv = "/ARP/IR/enviar/LigaTV" + finalprotocolo;
+```
 
 Contribuindo
 ------------
@@ -78,4 +103,5 @@ Lucas Mellos Carlos
 - lucas.mellos@hotmail.com
 
 Francisco Vefago Guetener
+- https://twitter.com/franciscovefago
 - franciscovguetener@gmail.com
