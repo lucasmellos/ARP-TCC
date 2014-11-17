@@ -1,4 +1,4 @@
-##Automação Residencial Protocolar
+###Automação Residencial Protocolar
 
 Sobre
 --------------
@@ -15,7 +15,7 @@ As bibliotecas necessárias para o funcionamento do Arduino estão na pasta `lib
 
 - Client-Side:
 
-Para o funcionamento da comunicação via protocolo UDP na porta 4444 é necessário uma estação cliente, na qual tem-se disponível até então para as plataformas: Windows, Mac OS X, Linux, iOS e Android. Ainda assim, deixa-se [novas sugestões](#Contribuindo) de implementações em plataformas diferentes.
+Para o funcionamento da comunicação via protocolo UDP na porta 4444 é necessário uma estação cliente, na qual tem-se disponível até então para as plataformas: Windows, Mac OS X, Linux, iOS e Android. Ainda assim, deixa-se [novas sugestões](#contribuindo) de implementações em plataformas diferentes.
 
 Instalação parte client-side
 -------------------------------
