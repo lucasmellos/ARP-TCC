@@ -11,11 +11,11 @@ O projeto é composto de uma arquitetura cliente/servidor na qual tem-se:
 
 Utilizando o hardware necessário para o equipamento - um Arduino. O código para a projeto encontra-se na pasta `Arduino Versão Adaptada/Automação Modular`.
 
-As bibliotecas necessárias para o funcionamento do Arduino estão pasta `libraries` que compõe este repositório e devem ser coladas dentro da pasta `libraries` do Arduino IDE.
+As bibliotecas necessárias para o funcionamento do Arduino estão na pasta `libraries` que compõe este repositório e devem ser colocadas dentro da pasta `libraries` do Arduino IDE.
 
 - Client-Side:
 
-Para o funcionamento da comunicação via protocolo UDP na porta 4444 é necessário uma estação cliente, na qual tem-se disponível até então para as plataformas: Windows, Mac OS X, Linux, iOS e Android.
+Para o funcionamento da comunicação via protocolo UDP na porta 4444 é necessário uma estação cliente, na qual tem-se disponível até então para as plataformas: Windows, Mac OS X, Linux, iOS e Android. Novas sugestões de plataformas enconstram-se em #Contribuindo.
 
 Instalação parte client-side
 -------------------------------
@@ -29,7 +29,8 @@ Na aplicação Android é só realizar a importação da pasta ..... para dentro
 Configurando a parte servidora
 ------------------------------------
 
-A estação Arduino necessita do upload do código. Abrindo o serial monitor do Arduino IDE os comandos:
+A estação Arduino necessita do upload do código. Abrindo o serial monitor do Arduino IDE tem-se os comandos para manipulação da placa:
+
 - Comando de configuração XBee do servidor:
 
 ```
