@@ -9,7 +9,7 @@ O que compõe este projeto?
 O projeto é composto de uma arquitetura cliente/servidor na qual tem-se:
 - Servidor:
 
-Utilizando o hardware necessário para o equipamento. O código para a projeto encontra-se na pasta `Arduino Versão Adaptada/Automação Modular`.
+Utilizando o hardware necessário para o equipamento - um Arduino. O código para a projeto encontra-se na pasta `Arduino Versão Adaptada/Automação Modular`.
 
 As bibliotecas necessárias para o funcionamento do Arduino estão pasta `libraries` que compõe este repositório e devem ser coladas dentro da pasta `libraries` do Arduino IDE.
 
@@ -104,7 +104,8 @@ São pontos a serem implementados ainda na concepção do autores:
 - Implementar um app para Windows Phone;
 - Utilizar sensores de umidade e temperatura;
 - Implementar no uso do Framework Core Foundation Framework;
-- Realziar a mesma implementação com WebSockets.
+- Realizar a mesma implementação com WebSockets;
+- Fazer a comunicação de fora da LAN.
 
 Contato
 -------------
