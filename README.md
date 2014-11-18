@@ -2,7 +2,7 @@
 
 Sobre
 --------------
-Este projeto compõe o Trabalho de Conclusão de Curso de Lucas Mellos Carlos e Francisco Vefago Guetener alunos do Instituto Federal Catarinense - Campus Avançado Sombrio intitulado de Automação Residencial Protocolar - Desenvolvimento Client-Side utilizando software e hardware livre.
+Este projeto compõe o Trabalho de Conclusão de Curso de Lucas Mellos Carlos e Francisco Vefago Guetener alunos do Instituto Federal Catarinense - Campus Avançado Sombrio intitulado de Automação Residencial Protocolar - Desenvolvimento Client-Side utilizando software e hardware livre. Este projeto basea-se no Albatross Master disponibilizado pela **[RoboCore](http://robocore.net)**, neste se o mesmo hardware utilizado no projeto original modificando apenas os códigos utilizados no projeto.
 
 O que compõe este projeto?
 --------------------------------
