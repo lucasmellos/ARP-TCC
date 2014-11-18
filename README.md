@@ -24,7 +24,7 @@ Para a aplicação desenvolvida em Java para Windows, Mac OS X e Linux basta ape
 
 Para a app desenvolvida para iOS - iPhone é necessário somente realizar o download da pasta `TCC` e executar o projeto para **[Xcode](https://developer.apple.com/xcode/downloads/)**.
 
-Na aplicação Android é só realizar a importação da pasta ..... para dentro do **[Android SDK](http://developer.android.com/sdk/index.html)**.
+Na aplicação Android é só realizar a importação da pasta através do IDE  para dentro do **[Android SDK](http://developer.android.com/sdk/index.html)**.
 
 Configurando a parte servidora
 ------------------------------------
@@ -35,6 +35,7 @@ A estação Arduino necessita do upload do código. Abrindo o serial monitor do 
 
 ```
   auto_config#
+
 ```
 
 - Configuração do XBee escravo:
